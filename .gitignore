@@ -1,0 +1,27 @@
+.venv/
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs and state (runtime artifacts)
+logs/
+state/
+
+# SQLite files (if created elsewhere)
+*.db
+*.sqlite
+*.sqlite3
+
+# OS/editor
+.DS_Store
+.idea/
+
+# C++ build outputs
+cpp/metrics
+cpp/*.o
+cpp/*.obj
+config.bat
+node_modules

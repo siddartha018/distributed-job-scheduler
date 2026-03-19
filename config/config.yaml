@@ -1,0 +1,19 @@
+master:
+  host: "127.0.0.1"
+  port: 8000
+  sqlite_path: "state/scheduler.db"
+  auth_token: "change-me-dev-token"
+  heartbeat_timeout_seconds: 12
+  watchdog_interval_seconds: 2
+  lease_ttl_seconds: 20
+  metrics_binary_path: "cpp/metrics"
+
+worker:
+  master_url: "http://127.0.0.1:8000"
+  auth_token: "change-me-dev-token"
+  heartbeat_interval_seconds: 4
+  poll_interval_seconds: 1
+  job_timeout_seconds: 120
+  random_failure_rate: 0.15
+  random_sleep_min_seconds: 1
+  random_sleep_max_seconds: 6
